@@ -27,7 +27,7 @@ public class Caixa {
     }
 
     public String toString() {
-        return "\n   la caixa identificacada amb: " + this.identificacio + " de " + this.pes +" kilos";
+        return String.format("Caixa %d:  \t%4.1f Kg %s", this.identificacio , this.pes, this.fragil);
     }
 }
 

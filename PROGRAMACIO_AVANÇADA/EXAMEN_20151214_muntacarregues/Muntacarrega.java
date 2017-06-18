@@ -22,7 +22,7 @@ public class Muntacarrega implements Cloneable {
         return quantes;
     }
 
-    public Caixa getDarrera() { //retorna null si no to caixa
+    public Caixa getDarrera() { //retorna null si no te caixa
         if (quantes>0)
             return caixes[quantes-1];
         return null;
@@ -59,14 +59,16 @@ public class Muntacarrega implements Cloneable {
 
     public String toString() {
         // Exercici 5
-        String r = "\nEl muntacarregues amb identificació" + this.identificacio
-                + " porta de baix a dalt: \n=========================================";
+        String r = "El muntacarregues id: " + (this.identificacio+1)
+                + "\n porta de baix a dalt: \n=====\n";
         float kilos = 0;
-        for(int i=0; i < this.quantes; i++) {
-            r += caixes[i].toString();
-            kilos += caixes[i].getPes();
+        for(int i=0; i < this.quantes ; i++) {
+            int index = this.quantes-1-i;
+            r += caixes[index].toString() +"\n";
+            kilos += caixes[index].getPes();
         }
-        return r + "\namb un pes total de: "+ kilos ;
+        r += "           --------\n";
+        return r + String.format("Total:  \t%4.1f Kg \n", kilos);
     }
 
 }

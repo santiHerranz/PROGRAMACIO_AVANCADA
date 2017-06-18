@@ -16,7 +16,9 @@ public class Repartiment {
     public static void main(String args[]) {
         // demanem nUmero de caixes a distribuir
         //Keyboard.readInt();
-        Repartiment m = new Repartiment(5);
+        Repartiment m = new Repartiment(8);
+
+        m.printCaixes();
 
         // Exercici 2
         m.backMillorSolucio(0);
@@ -25,15 +27,31 @@ public class Repartiment {
         System.out.println(m);
     }
 
+    private void printCaixes() {
+        for (int i = 0; i < caixes.length; i++) {
+            System.out.println(caixes[i]);
+        }
+    }
+
 
     public static void carregaCaixes(Caixa[] caixes) {
         // omplena elparamatre caixes amb tots els castes caixa a camps
 
-        caixes[0] = new Caixa(0,5, false);
-        caixes[1] = new Caixa(1,4, false);
-        caixes[2] = new Caixa(2,3, false);
-        caixes[3] = new Caixa(3,2, false);
-        caixes[4] = new Caixa(4,2, false);
+        caixes[0] = new Caixa(1, 5.5f, false);
+        if (caixes.length < 2) return;
+        caixes[1] = new Caixa(2,4.5f, false);
+        if (caixes.length < 3) return;
+        caixes[2] = new Caixa(3,3.5f, false);
+        if (caixes.length < 4) return;
+        caixes[3] = new Caixa(4,1.5f, true);
+        if (caixes.length < 5) return;
+        caixes[4] = new Caixa(5,3.8f, false);
+        if (caixes.length < 6) return;
+        caixes[5] = new Caixa(6,4.5f, false);
+        if (caixes.length < 7) return;
+        caixes[6] = new Caixa(7,2.2f, false);
+        if (caixes.length < 8) return;
+        caixes[7] = new Caixa(8,1.1f, true);
 
     }
 
@@ -83,11 +101,14 @@ public class Repartiment {
         boolean trobat = false;
         for (int j = sol[i].getQuantes() - 1; j >= 0 && !trobat; j--) {
             if (acc + caixes[k].getPes() > sol[i].donaCaixa(j).getPes())
-                trobat = true; else acc += sol[i].donaCaixa(j).getPes();
+                trobat = true;
+            else
+                acc += sol[i].donaCaixa(j).getPes();
     } return !trobat;
     }
 
     private boolean millorSolucio() {
+
         return qSol < qMillor || (qSol == qMillor && fragils());
     }
 
@@ -105,7 +126,7 @@ public class Repartiment {
     public String toString() {
         // Exercici 5
         String r;
-        r = "La millor solució usa: " + this.qMillor + " montacarregues";
+        r = "\nMillor solució : " + this.qMillor + " muntacarregues";
                 r=r+ "\nLa distribució següent:\n";
         for(int i=0; i < millor.length; i++) {
             if (millor[i].getQuantes()>0) r=r+ millor[i].toString()+"\n";
