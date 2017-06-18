@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Backtraking/Backtraking.iml" filepath="$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Backtraking/Backtraking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Divideix_i_Venc/Divideix_i_Venc.iml" filepath="$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Divideix_i_Venc/Divideix_i_Venc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA.iml" filepath="$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Tecnica_Vorac/Tecnica_Vorac.iml" filepath="$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Tecnica_Vorac/Tecnica_Vorac.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Variable dinàmica.iml" filepath="$PROJECT_DIR$/../PROGRAMACIO_AVANÇADA/PROGRAMACIO_AVANÇADA/Variable dinàmica.iml" />
+    </modules>
+  </component>
+</project>
